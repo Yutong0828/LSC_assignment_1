@@ -1,3 +1,5 @@
+#numba accelerated version
+
 import time
 start_time=time.time()
 
@@ -41,6 +43,5 @@ cc.compile()
 import test_aot
 test_aot.simu_aot(S,T)
 
-end_time=time.time()
 
-print("time cost:",end_time-start_time)
+print("time cost:",time.time()-start_time)
